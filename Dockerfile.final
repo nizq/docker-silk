@@ -1,0 +1,11 @@
+FROM alpine:3.3
+
+MAINTAINER nizq <ni.zhiqiang@gmail.com>
+
+RUN echo "===> Adding dependency..." \
+    && apk --update add glib libpcap pcre python \
+    && rm -rf /var/cache/apk/*
+
+ADD silk-binary.tar.gz /
+
+VOLUME ["/data", "/etc/silk", "/etc/supervisor.d/"]

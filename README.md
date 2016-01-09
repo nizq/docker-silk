@@ -1,2 +1,7 @@
 # docker-silk
-Docker image of [CERT NetSA Security Suite](http://tools.netsa.cert.org/index.html),  include yaf and silk/pysilk.
+
+Download fixbuf, yaf, silk to 'vendor' directory, then run `./build-docker.sh`.
+
+- [fixbuf](http://tools.netsa.cert.org/fixbuf/download.html)
+- [yaf](http://tools.netsa.cert.org/yaf/download.html)
+- [silk](http://tools.netsa.cert.org/silk/download.html)

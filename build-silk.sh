@@ -6,8 +6,14 @@ FINAL=$SOURCE/final
 VENDOR=$SOURCE/vendor
 
 VERSION_FIXBUF=1.7.1
-VERSION_YAF=2.8.0
+VERSION_YAF=2.8.1
 VERSION_SILK=3.11.0.1
+
+#download
+cd $VENDOR
+wget http://tools.netsa.cert.org/releases/silk-${VERSION_SILK}.tar.gz
+wget http://tools.netsa.cert.org/releases/libfixbuf-${VERSION_FIXBUF}.tar.gz
+wget http://tools.netsa.cert.org/releases/yaf-${VERSION_YAF}.tar.gz
 
 #libfixbuf
 tar zxvf $VENDOR/libfixbuf-${VERSION_FIXBUF}.tar.gz -C $BUILD
